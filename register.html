@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая личность - Capsulify</title>
+    <link rel="stylesheet" href="assets/styles/register.css">
+</head>
+<body>
+<div class="register-wrapper">
+    <div class="register-card">
+        <a href="index.html" class="register-logo">CAPSULIFY</a>
+        <p class="register-subtitle">Создание новой личности</p>
+        <form action="dashboard.html">
+            <div class="input-group">
+                <label class="input-label">Имя пользователя</label>
+                <input type="text" class="input-field" placeholder="CyberPunk_2077" required>
+            </div>
+            <div class="divider"></div>
+            <p class="seed-title">Ваш уникальный ключ шифрования</p>
+            <textarea class="seed-textarea" readonly>witch collapse practice feed shame open despair creek road again ice least</textarea>
+            <div class="action-row">
+                <button type="button" class="btn-action btn-copy">Копировать</button>
+                <button type="button" class="btn-action btn-refresh">↻</button>
+            </div>
+            <div class="warning-box">
+                <span class="warning-icon">⚠</span>
+                <p>Сохраните эти слова в надежном месте. Без них вы потеряете доступ к своим данным навсегда.</p>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="confirm" required>
+                <label for="confirm">Я сохранил свою фразу</label>
+            </div>
+            <button type="submit" class="btn-submit">Создать аккаунт</button>
+        </form>
+        <div class="register-footer">
+            Уже есть ключ? <a href="login.html" class="register-link">Войти</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
