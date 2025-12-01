@@ -1,0 +1,107 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.profile-card {
+    background-color: var(--note-bg);
+    width: 100%;
+    max-width: 40rem;
+    padding: 4rem 2rem;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.avatar-wrapper {
+    position: relative;
+    margin-bottom: 2rem;
+}
+.avatar-img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+}
+.change-avatar-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--bg-header);
+    border: 1px solid var(--text-gray);
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: 0.2s;
+}
+.change-avatar-btn:hover {
+    background: var(--accent-color);
+    color: black;
+    border-color: var(--accent-color);
+}
+.username {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+.user-email {
+    color: var(--text-gray);
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+.user-stats {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+.count {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+.label {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+.btn {
+    padding: 1.2rem;
+    border-radius: var(--border-radius);
+    border: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.edit-btn {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+.edit-btn:hover {
+    background-color: #a0e600;
+}
+.logout-btn {
+    background-color: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+}
+.logout-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+}

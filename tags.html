@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ярлыки - Capsulify</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/tags.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Ярлыки</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item active"><span class="icon">🏷️</span> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
+                <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar"><input type="text" placeholder="Поиск ярлыка..." class="search-input"><button class="search-button">🔍</button></div>
+            <div class="action-buttons"><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area">
+            <div class="tags-header"><h2>Управление ярлыками</h2><button class="create-tag-btn">+ Новый ярлык</button></div>
+            <div class="tags-grid">
+                <div class="tag-card">
+                    <div class="tag-top"><div class="tag-color" style="background-color: #ff4d4d; box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);"></div><button class="tag-options">•••</button></div>
+                    <h3 class="tag-name">Важное</h3><div class="tag-stats"><span>12 заметок</span><span>3 задачи</span></div>
+                </div>
+                <div class="tag-card">
+                    <div class="tag-top"><div class="tag-color" style="background-color: #b3ff00; box-shadow: 0 0 10px rgba(179, 255, 0, 0.4);"></div><button class="tag-options">•••</button></div>
+                    <h3 class="tag-name">Работа</h3><div class="tag-stats"><span>8 заметок</span><span>5 задач</span></div>
+                </div>
+                <div class="tag-card add-new"><span class="plus-icon">+</span><span class="add-text">Создать</span></div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

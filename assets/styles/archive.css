@@ -1,0 +1,21 @@
+.archive-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.note-card.archived {
+    background-color: var(--note-bg);
+    padding: 1.6rem;
+    border-radius: var(--border-radius);
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+.note-card.archived:hover {
+    opacity: 1;
+}
+.note-card.archived h3 {
+    margin-bottom: 1rem;
+    color: var(--text-gray);
+    text-decoration: line-through;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Capsulify</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/trash.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Корзина</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
+                <li><a href="trash.html" class="nav-item active"><span class="icon">🗑️</span> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar disabled"><input type="text" placeholder="Корзина" disabled class="search-input"></div>
+            <div class="action-buttons"><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area">
+            <div class="trash-header"><button class="empty-trash-btn">Очистить корзину</button></div>
+            <div class="trash-list">
+                <div class="trash-item"><span>Удаленная заметка</span><button class="restore-btn">Восстановить</button></div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>

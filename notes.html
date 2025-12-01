@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки - Capsulify</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/notes.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Заметки</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item active"><span class="icon">💡</span> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
+                <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar"><input type="text" placeholder="Поиск по заметкам..." class="search-input"><button class="search-button">🔍</button></div>
+            <div class="action-buttons"><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area">
+            <div class="notes-header"><h2>Все заметки</h2><div class="view-options"><span>Сортировка: <b>Новые</b></span></div></div>
+            <div class="notes-grid">
+                <div class="note-card create-new"><div class="plus-icon">+</div><h3>Создать заметку</h3></div>
+                <div class="note-card">
+                    <div class="card-top"><h3>Идеи для стартапа</h3><button class="more-btn">•••</button></div>
+                    <p class="note-preview">1. Агрегатор скидок...<br>Нужно проанализировать рынок...</p>
+                    <div class="card-footer"><span class="date">Сегодня, 14:30</span><span class="tag" style="color: #b3ff00; background: rgba(179, 255, 0, 0.1);">Идеи</span></div>
+                </div>
+                <div class="note-card">
+                    <div class="card-top"><h3>Список покупок</h3><button class="more-btn">•••</button></div>
+                    <p class="note-preview">- Молоко<br>- Хлеб<br>- Яйца</p>
+                    <div class="card-footer"><span class="date">Вчера</span><span class="tag" style="color: #ff4d4d; background: rgba(255, 77, 77, 0.1);">Личное</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
