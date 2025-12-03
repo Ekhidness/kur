@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Вход - Capsulify</title>
-  <link rel="stylesheet" href="assets/styles/login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Capsulify</title>
+    <link rel="stylesheet" href="assets/styles/login.css">
 </head>
 <body>
-<div class="login-wrapper">
-  <div class="login-card">
-    <a href="index.html" class="login-logo">CAPSULIFY</a>
-    <p class="login-subtitle">Введите вашу секретную фразу</p>
-
-    <form action="dashboard.html">
-      <div class="form-group">
-        <label class="form-label">Seed-фраза (12 слов)</label>
-        <textarea class="form-textarea" placeholder="witch collapse practice feed shame open despair creek road again ice least" required></textarea>
-      </div>
-
-      <div class="security-notice">
-        <span class="icon">🔒</span>
-        <p>Ваши данные шифруются локально. Мы не храним вашу фразу. Если вы потеряете её — доступ восстановить невозможно.</p>
-      </div>
-
-      <button type="submit" class="btn-submit">Разблокировать</button>
-    </form>
-
-    <div class="login-footer">
-      Впервые здесь? <a href="register.html" class="login-link">Создать аккаунт</a>
-    </div>
-  </div>
-</div>
+    <main class="login-wrapper">
+        <div class="login-card">
+            <a href="index.html" class="login-logo">CAPSULIFY</a>
+            <p class="login-subtitle">С возвращением!</p>
+            <form action="dashboard.html">
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-input" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-submit">Войти</button>
+            </form>
+            <div class="login-footer">Нет аккаунта? <a href="register.html" class="login-link">Регистрация</a></div>
+        </div>
+    </main>
 </body>
 </html>

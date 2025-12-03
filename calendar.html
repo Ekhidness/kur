@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Календарь - Capsulify</title>
-  <link rel="stylesheet" href="assets/styles/main.css">
-  <link rel="stylesheet" href="assets/styles/calendar.css">
-  <script src="scripts/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь - Capsulify</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/calendar.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-<div id="overlay" class="overlay"></div>
-<div class="app-container">
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header"><h1 class="app-title">Календарь</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-    <nav class="sidebar-nav">
-      <ul>
-        <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
-        <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
-        <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
-        <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
-        <li><a href="calendar.html" class="nav-item active"><span class="icon">📅</span> Календарь</a></li>
-        <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
-        <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
-        <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-        <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <main class="main-content">
-    <header class="content-header">
-      <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-      <div class="search-bar"><input type="text" placeholder="Поиск событий" class="search-input"><button class="search-button">🔍</button></div>
-      <div class="action-buttons"><a href="profile.html" class="profile-btn">👤</a></div>
-    </header>
-    <div class="content-area">
-      <div class="calendar-header"><button class="nav-btn">&lt;</button><h2>Ноябрь 2025</h2><button class="nav-btn">&gt;</button></div>
-      <div class="calendar-grid">
-        <div class="day-name">Пн</div><div class="day-name">Вт</div><div class="day-name">Ср</div><div class="day-name">Чт</div><div class="day-name">Пт</div><div class="day-name">Сб</div><div class="day-name">Вс</div>
-        <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day">1</div><div class="day weekend">2</div>
-        <div class="day">3</div><div class="day">4</div><div class="day has-event">5 <span class="event-dot"></span></div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day weekend">9</div>
-        <div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day active">14</div><div class="day">15</div><div class="day weekend">16</div>
-        <div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day has-event">21 <span class="event-dot"></span></div><div class="day">22</div><div class="day weekend">23</div>
-        <div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day weekend">30</div>
-        <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
-      </div>
+    <div id="overlay" class="overlay"></div>
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header"><h1 class="app-title">Календарь</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
+                    <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
+                    <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
+                    <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
+                    <li><a href="calendar.html" class="nav-item active"><span class="icon">📅</span> Календарь</a></li>
+                    <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
+                    <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
+                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
+                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="content-header">
+                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+                <div class="search-bar"><input type="text" placeholder="Поиск событий" class="search-input"><button class="search-button">🔍</button></div>
+                <div class="action-buttons"><button id="theme-toggle" class="theme-btn" aria-label="Сменить тему"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button><a href="profile.html" class="profile-btn">👤</a></div>
+            </header>
+            <div class="content-area">
+                <div class="calendar-header"><button class="nav-btn">&lt;</button><h2>Ноябрь 2025</h2><button class="nav-btn">&gt;</button></div>
+                <div class="calendar-grid">
+                    <div class="day-name">Пн</div><div class="day-name">Вт</div><div class="day-name">Ср</div><div class="day-name">Чт</div><div class="day-name">Пт</div><div class="day-name">Сб</div><div class="day-name">Вс</div>
+                    <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day">1</div><div class="day weekend">2</div>
+                    <div class="day">3</div><div class="day">4</div><div class="day has-event">5 <span class="event-dot"></span></div><div class="day">6</div><div class="day">7</div><div class="day">8</div><div class="day weekend">9</div>
+                    <div class="day">10</div><div class="day">11</div><div class="day">12</div><div class="day">13</div><div class="day active">14</div><div class="day">15</div><div class="day weekend">16</div>
+                    <div class="day">17</div><div class="day">18</div><div class="day">19</div><div class="day">20</div><div class="day has-event">21 <span class="event-dot"></span></div><div class="day">22</div><div class="day weekend">23</div>
+                    <div class="day">24</div><div class="day">25</div><div class="day">26</div><div class="day">27</div><div class="day">28</div><div class="day">29</div><div class="day weekend">30</div>
+                    <div class="day empty"></div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
+                </div>
+            </div>
+        </main>
     </div>
-  </main>
-</div>
 </body>
 </html>

@@ -4,10 +4,12 @@
     align-items: center;
     margin-bottom: 3rem;
 }
+
 .tags-header h2 {
     font-size: 2.4rem;
     color: var(--text-color);
 }
+
 .create-tag-btn {
     background-color: var(--accent-color);
     color: var(--bg-color);
@@ -19,15 +21,18 @@
     font-size: 1.4rem;
     transition: 0.2s;
 }
+
 .create-tag-btn:hover {
     background-color: #a0e600;
     transform: translateY(-2px);
 }
+
 .tags-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     gap: 2rem;
 }
+
 .tag-card {
     background-color: var(--note-bg);
     border-radius: 1rem;
@@ -39,23 +44,27 @@
     border: 1px solid transparent;
     min-height: 16rem;
 }
+
 .tag-card:hover {
-    background-color: #333;
+    background-color: var(--hover-bg-nav);
     transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .tag-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1.5rem;
 }
+
 .tag-color {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
+
 .tag-options {
     background: none;
     border: none;
@@ -66,14 +75,17 @@
     transition: 0.2s;
     padding: 0 0.5rem;
 }
+
 .tag-card:hover .tag-options {
     opacity: 1;
 }
+
 .tag-name {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-bottom: auto;
 }
+
 .tag-stats {
     display: flex;
     gap: 1.5rem;
@@ -81,10 +93,12 @@
     border-top: 1px solid var(--border-color);
     padding-top: 1rem;
 }
+
 .tag-stats span {
     font-size: 1.2rem;
     color: var(--text-gray);
 }
+
 .tag-card.add-new {
     background: transparent;
     border: 2px dashed var(--border-color);
@@ -92,35 +106,43 @@
     justify-content: center;
     color: var(--text-gray);
 }
+
 .tag-card.add-new:hover {
     border-color: var(--accent-color);
     color: var(--accent-color);
     background: rgba(179, 255, 0, 0.05);
 }
+
 .plus-icon {
     font-size: 4rem;
     margin-bottom: 0.5rem;
 }
+
 .add-text {
     font-size: 1.6rem;
     font-weight: 600;
 }
+
 @media (max-width: 768px) {
     .tags-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
     }
+
     .create-tag-btn {
         width: 100%;
     }
+
     .tags-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .tag-options {
         opacity: 1;
     }
 }
+
 @media (max-width: 480px) {
     .tags-grid {
         grid-template-columns: 1fr;

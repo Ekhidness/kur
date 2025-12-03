@@ -4,20 +4,24 @@
     align-items: center;
     margin-bottom: 2rem;
 }
+
 .notes-header h2 {
     font-size: 2.4rem;
     color: var(--text-color);
 }
+
 .view-options {
     color: var(--text-gray);
     font-size: 1.4rem;
     cursor: pointer;
 }
+
 .notes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     gap: 2rem;
 }
+
 .note-card {
     background-color: var(--note-bg);
     border-radius: 0.8rem;
@@ -30,11 +34,13 @@
     cursor: pointer;
     position: relative;
 }
+
 .note-card:hover {
     transform: translateY(-4px);
     background-color: #333;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .note-card.create-new {
     border: 2px dashed var(--border-color);
     background: transparent;
@@ -42,29 +48,34 @@
     justify-content: center;
     color: var(--text-gray);
 }
+
 .note-card.create-new:hover {
     border-color: var(--accent-color);
     color: var(--accent-color);
     background: rgba(179, 255, 0, 0.05);
     transform: translateY(-4px);
 }
+
 .plus-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
     line-height: 1;
 }
+
 .card-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 1rem;
 }
+
 .card-top h3 {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.3;
     color: var(--text-color);
 }
+
 .more-btn {
     background: none;
     border: none;
@@ -75,9 +86,11 @@
     opacity: 0;
     transition: 0.2s;
 }
+
 .note-card:hover .more-btn {
     opacity: 1;
 }
+
 .note-preview {
     color: var(--text-gray);
     font-size: 1.4rem;
@@ -90,16 +103,19 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
 }
+
 .date {
     font-size: 1.2rem;
     color: #666;
 }
+
 .tag {
     padding: 0.4rem 0.8rem;
     border-radius: 0.4rem;
@@ -108,13 +124,16 @@
     background: rgba(255, 255, 255, 0.1);
     color: var(--text-gray);
 }
+
 @media (max-width: 768px) {
     .notes-grid {
         grid-template-columns: 1fr;
     }
+
     .more-btn {
         opacity: 1;
     }
+
     .note-card {
         min-height: 16rem;
     }

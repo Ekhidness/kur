@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Напоминания - Capsulify</title>
-  <link rel="stylesheet" href="assets/styles/main.css">
-  <link rel="stylesheet" href="assets/styles/reminders.css">
-  <script src="scripts/main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Напоминания - Capsulify</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/reminders.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-<div id="overlay" class="overlay"></div>
-<div class="app-container">
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header"><h1 class="app-title">Напоминания</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-    <nav class="sidebar-nav">
-      <ul>
-        <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
-        <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
-        <li><a href="reminders.html" class="nav-item active"><span class="icon">🔔</span> Напоминания</a></li>
-        <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
-        <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
-        <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
-        <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
-        <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-        <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <main class="main-content">
-    <header class="content-header">
-      <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-      <div class="search-bar"><input type="text" placeholder="Найти задачу..." class="search-input"><button class="search-button">🔍</button></div>
-      <div class="action-buttons"><a href="profile.html" class="profile-btn">👤</a></div>
-    </header>
-    <div class="content-area">
-      <div class="reminders-header">
-        <div class="header-text"><h2>Мои задачи</h2><p class="subtitle">5 задач на сегодня</p></div>
-        <button class="add-task-btn">+ Новая задача</button>
-      </div>
-      <div class="tasks-group">
-        <h3 class="group-title text-danger">Просрочено</h3>
-        <div class="task-card overdue">
-          <button class="check-circle"></button>
-          <div class="task-info"><span class="task-name">Отправить отчет</span><div class="task-meta"><span class="task-time">Вчера, 18:00</span><span class="tag red">Учеба</span></div></div>
-          <button class="delete-btn">✕</button>
-        </div>
-      </div>
-      <div class="tasks-group">
-        <h3 class="group-title">Сегодня</h3>
-        <div class="task-card"><button class="check-circle"></button><div class="task-info"><span class="task-name">Созвон с командой</span><div class="task-meta"><span class="task-time">14:00</span><span class="tag blue">Работа</span></div></div></div>
-      </div>
+    <div id="overlay" class="overlay"></div>
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header"><h1 class="app-title">Напоминания</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
+                    <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
+                    <li><a href="reminders.html" class="nav-item active"><span class="icon">🔔</span> Напоминания</a></li>
+                    <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
+                    <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
+                    <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
+                    <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
+                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
+                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="content-header">
+                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+                <div class="search-bar"><input type="text" placeholder="Найти задачу..." class="search-input"><button class="search-button">🔍</button></div>
+                <div class="action-buttons"><button id="theme-toggle" class="theme-btn" aria-label="Сменить тему"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button><a href="profile.html" class="profile-btn">👤</a></div>
+            </header>
+            <div class="content-area">
+                <div class="reminders-header">
+                    <div class="header-text"><h2>Мои задачи</h2><p class="subtitle">5 задач на сегодня</p></div>
+                    <button class="btn btn-primary">+ Новая задача</button>
+                </div>
+                <div class="tasks-group">
+                    <h3 class="group-title text-danger">Просрочено</h3>
+                    <div class="task-card overdue">
+                        <button class="check-circle"></button>
+                        <div class="task-info"><span class="task-name">Отправить отчет</span><div class="task-meta"><span class="task-time">Вчера, 18:00</span><span class="tag red">Учеба</span></div></div>
+                        <button class="delete-btn">✕</button>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </main>
-</div>
 </body>
 </html>

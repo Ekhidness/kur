@@ -9,75 +9,87 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-<div id="overlay" class="overlay"></div>
-<div class="app-container">
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header"><h1 class="app-title">Capsulify</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-        <nav class="sidebar-nav">
-            <ul>
-                <li><a href="dashboard.html" class="nav-item active"><span class="icon">📊</span> Дэшборд</a></li>
-                <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
-                <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
-                <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
-                <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
-                <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
-                <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
-                <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-                <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <main class="main-content">
-        <header class="content-header">
-            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-            <div class="search-bar"><input type="text" placeholder="Глобальный поиск..." class="search-input"><button class="search-button">🔍</button></div>
-            <div class="action-buttons"><a href="profile.html" class="profile-btn">👤</a></div>
-        </header>
-        <div class="content-area">
-            <div class="welcome-banner">
-                <div class="welcome-text"><h2>Добрый день, User! 👋</h2><p>У вас 5 невыполненных задач и 2 события сегодня.</p></div>
-                <div class="date-display"><span class="today-date">15 Ноя</span><span class="today-day">Суббота</span></div>
+    <div id="overlay" class="overlay"></div>
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1 class="app-title">Capsulify</h1>
+                <button id="close-menu-btn" class="close-menu-btn">✕</button>
             </div>
-            <div class="dashboard-grid">
-                <div class="grid-col-main">
-                    <div class="stats-row">
-                        <div class="stat-card"><div class="stat-icon yellow">💡</div><div class="stat-info"><span class="stat-num">12</span><span class="stat-label">Заметок</span></div></div>
-                        <div class="stat-card"><div class="stat-icon blue">🔔</div><div class="stat-info"><span class="stat-num">5</span><span class="stat-label">Задач</span></div></div>
-                        <div class="stat-card"><div class="stat-icon green">📂</div><div class="stat-info"><span class="stat-num">7.5GB</span><span class="stat-label">Занято</span></div></div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="nav-item active"><span class="icon">📊</span> Дэшборд</a></li>
+                    <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
+                    <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
+                    <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
+                    <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
+                    <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
+                    <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
+                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
+                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="content-header">
+                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+                <div class="search-bar">
+                    <input type="text" placeholder="Глобальный поиск..." class="search-input">
+                    <button class="search-button">🔍</button>
+                </div>
+                <div class="action-buttons">
+                    <button id="theme-toggle" class="theme-btn" aria-label="Сменить тему">
+                        <span class="icon-sun">☀</span>
+                        <span class="icon-moon">☾</span>
+                    </button>
+                    <a href="profile.html" class="profile-btn">👤</a>
+                </div>
+            </header>
+            <div class="content-area">
+                <div class="welcome-banner">
+                    <div class="welcome-text"><h2>Добрый день, User! 👋</h2><p>У вас 5 невыполненных задач и 2 события сегодня.</p></div>
+                    <div class="date-display"><span class="today-date">15 Ноя</span><span class="today-day">Суббота</span></div>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="grid-col-main">
+                        <div class="stats-row">
+                            <div class="stat-card"><div class="stat-icon yellow">💡</div><div class="stat-info"><span class="stat-num">12</span><span class="stat-label">Заметок</span></div></div>
+                            <div class="stat-card"><div class="stat-icon blue">🔔</div><div class="stat-info"><span class="stat-num">5</span><span class="stat-label">Задач</span></div></div>
+                            <div class="stat-card"><div class="stat-icon green">📂</div><div class="stat-info"><span class="stat-num">3.2GB</span><span class="stat-label">Занято</span></div></div>
+                        </div>
+                        <div class="section-box">
+                            <div class="section-header"><h3>📝 Последние изменения</h3><a href="notes.html" class="link-more">Все заметки →</a></div>
+                            <div class="recent-list">
+                                <a href="#" class="recent-item"><div class="recent-icon">📄</div><div class="recent-info"><h4>Идеи для стартапа</h4><p>Отредактировано 2 часа назад</p></div></a>
+                                <a href="#" class="recent-item"><div class="recent-icon">🛒</div><div class="recent-info"><h4>Список покупок</h4><p>Отредактировано вчера</p></div></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="section-box">
-                        <div class="section-header"><h3>📝 Последние изменения</h3><a href="notes.html" class="link-more">Все заметки →</a></div>
-                        <div class="recent-list">
-                            <a href="#" class="recent-item"><div class="recent-icon">📄</div><div class="recent-info"><h4>Идеи для стартапа</h4><p>Отредактировано 2 часа назад</p></div></a>
-                            <a href="#" class="recent-item"><div class="recent-icon">🛒</div><div class="recent-info"><h4>Список покупок</h4><p>Отредактировано вчера</p></div></a>
+                    <div class="grid-col-side">
+                        <div class="quick-actions-box">
+                            <h3>Быстрый старт</h3>
+                            <div class="actions-grid">
+                                <a href="notes.html" class="action-btn"><span class="btn-icon">+</span><span>Заметка</span></a>
+                                <a href="reminders.html" class="action-btn"><span class="btn-icon">✓</span><span>Задача</span></a>
+                                <a href="files.html" class="action-btn"><span class="btn-icon">☁</span><span>Файл</span></a>
+                                <a href="timer.html" class="action-btn"><span class="btn-icon">⏱</span><span>Таймер</span></a>
+                            </div>
+                        </div>
+                        <div class="mini-calendar-box">
+                            <div class="mini-header">Ноябрь 2025</div>
+                            <div class="mini-grid">
+                                <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                                <span class="empty"></span><span class="empty"></span><span class="empty"></span><span class="empty"></span><span class="empty"></span><span>1</span><span>2</span>
+                                <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
+                                <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span class="today">15</span><span>16</span>
+                                <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
+                                <span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="grid-col-side">
-                    <div class="quick-actions-box">
-                        <h3>Быстрый старт</h3>
-                        <div class="actions-grid">
-                            <a href="notes.html" class="action-btn"><span class="btn-icon">+</span><span>Заметка</span></a>
-                            <a href="reminders.html" class="action-btn"><span class="btn-icon">✓</span><span>Задача</span></a>
-                            <a href="files.html" class="action-btn"><span class="btn-icon">☁</span><span>Файл</span></a>
-                            <a href="timer.html" class="action-btn"><span class="btn-icon">⏱</span><span>Таймер</span></a>
-                        </div>
-                    </div>
-                    <div class="mini-calendar-box">
-                        <div class="mini-header">Ноябрь 2025</div>
-                        <div class="mini-grid">
-                            <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
-                            <span class="empty"></span><span class="empty"></span><span class="empty"></span><span class="empty"></span><span class="empty"></span><span>1</span><span>2</span>
-                            <span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span>
-                            <span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span class="today">15</span><span>16</span>
-                            <span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span>
-                            <span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </main>
-</div>
+        </main>
+    </div>
 </body>
 </html>

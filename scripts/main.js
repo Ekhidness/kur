@@ -3,6 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.getElementById('overlay');
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const closeBtn = document.getElementById('close-menu-btn');
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        html.classList.add('light-theme');
+    }
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('light-theme');
+            if (html.classList.contains('light-theme')) {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
     function toggleMenu() {
         sidebar.classList.toggle('active');
         overlay.classList.toggle('active');

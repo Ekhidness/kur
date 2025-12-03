@@ -4,15 +4,18 @@
     align-items: center;
     margin-bottom: 3rem;
 }
+
 .header-text h2 {
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
     color: var(--text-color);
 }
+
 .subtitle {
     color: var(--text-gray);
     font-size: 1.4rem;
 }
+
 .add-task-btn {
     background-color: var(--accent-color);
     color: var(--bg-color);
@@ -24,14 +27,17 @@
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .add-task-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(179, 255, 0, 0.2);
     background-color: #a0e600;
 }
+
 .tasks-group {
     margin-bottom: 3rem;
 }
+
 .group-title {
     font-size: 1.6rem;
     color: var(--text-gray);
@@ -40,9 +46,11 @@
     letter-spacing: 1px;
     font-weight: 600;
 }
+
 .text-danger {
     color: #ff4d4d;
 }
+
 .task-card {
     display: flex;
     align-items: center;
@@ -53,19 +61,24 @@
     transition: 0.2s;
     border: 1px solid transparent;
 }
+
 .task-card:hover {
-    background-color: #333;
+    background-color: var(--hover-bg-nav);
     transform: translateX(5px);
 }
+
 .task-card.overdue {
     border-left: 4px solid #ff4d4d;
 }
+
 .task-card.completed {
     opacity: 0.5;
 }
+
 .task-card.completed .task-name {
     text-decoration: line-through;
 }
+
 .check-circle {
     width: 2.4rem;
     height: 2.4rem;
@@ -82,54 +95,66 @@
     font-weight: bold;
     transition: 0.2s;
 }
+
 .task-card:hover .check-circle {
     border-color: var(--accent-color);
 }
+
 .check-circle.checked {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 }
+
 .task-info {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
+
 .task-name {
     font-size: 1.6rem;
     color: var(--text-color);
     margin-bottom: 0.4rem;
 }
+
 .task-meta {
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: 1.2rem;
 }
+
 .task-time {
     color: var(--text-gray);
 }
+
 .task-card.overdue .task-time {
     color: #ff4d4d;
     font-weight: bold;
 }
+
 .tag {
     font-size: 1rem;
     padding: 0.2rem 0.6rem;
     border-radius: 0.4rem;
     font-weight: 600;
 }
+
 .tag.red {
     background: rgba(255, 77, 77, 0.15);
     color: #ff4d4d;
 }
+
 .tag.blue {
     background: rgba(0, 210, 255, 0.15);
     color: #00d2ff;
 }
+
 .tag.gray {
     background: rgba(255, 255, 255, 0.1);
     color: #aaa;
 }
+
 .delete-btn {
     background: none;
     border: none;
@@ -140,21 +165,26 @@
     opacity: 0;
     transition: 0.2s;
 }
+
 .task-card:hover .delete-btn {
     opacity: 1;
 }
+
 .delete-btn:hover {
     color: #ff4d4d;
 }
+
 @media (max-width: 768px) {
     .reminders-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
     }
+
     .add-task-btn {
         width: 100%;
     }
+
     .delete-btn {
         opacity: 1;
     }

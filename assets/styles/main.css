@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
+
 :root {
     --bg-color: #1e1e1e;
     --bg-sidebar: #1a1a1a;
@@ -19,23 +23,44 @@ html {
     --sidebar-width: 26rem;
     --header-height: 6rem;
     --font-size-base: 1.6rem;
-    --border-radius: 0.4rem;
+    --border-radius: 0.8rem;
     --hover-bg-nav: rgba(255, 255, 255, 0.05);
     --active-bg-nav: rgba(179, 255, 0, 0.1);
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --btn-padding: 1rem 2rem;
 }
+
+html.light-theme {
+    --bg-color: #f4f6f8;
+    --bg-sidebar: #ffffff;
+    --bg-header: #ffffff;
+    --bg-content: #f4f6f8;
+    --text-color: #1a1a1a;
+    --text-gray: #666666;
+    --accent-color: #7cb342;
+    --border-color: #e0e0e0;
+    --note-bg: #ffffff;
+    --hover-bg-nav: rgba(0, 0, 0, 0.05);
+    --active-bg-nav: rgba(124, 179, 66, 0.15);
+    --input-bg: #f0f0f0;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: var(--font-size-base);
     line-height: 1.6;
     overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
 }
+
 .app-container {
     display: flex;
     width: 100%;
     min-height: 100vh;
 }
+
 .sidebar {
     width: var(--sidebar-width);
     background-color: var(--bg-sidebar);
@@ -47,6 +72,7 @@ body {
     z-index: 1001;
     transition: transform 0.3s ease;
 }
+
 .sidebar-header {
     display: flex;
     align-items: center;
@@ -56,11 +82,13 @@ body {
     border-bottom: 1px solid var(--border-color);
     background-color: var(--bg-header);
 }
+
 .app-title {
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--text-color);
 }
+
 .close-menu-btn {
     display: none;
     background: none;
@@ -69,12 +97,14 @@ body {
     font-size: 2.4rem;
     cursor: pointer;
 }
+
 .sidebar-nav ul {
     list-style: none;
     padding: 2rem 0;
     flex-grow: 1;
     overflow-y: auto;
 }
+
 .nav-item {
     display: flex;
     align-items: center;
@@ -86,19 +116,23 @@ body {
     transition: 0.2s;
     border-left: 0.4rem solid transparent;
 }
+
 .nav-item:hover {
     background-color: var(--hover-bg-nav);
     color: var(--text-color);
 }
+
 .nav-item.active {
     background-color: var(--active-bg-nav);
     color: var(--accent-color);
     border-left-color: var(--accent-color);
 }
+
 .icon {
     width: 2.4rem;
     text-align: center;
 }
+
 .sidebar-footer {
     padding: 1.6rem;
     border-top: 1px solid var(--border-color);
@@ -106,6 +140,7 @@ body {
     font-size: 1.2rem;
     color: var(--text-gray);
 }
+
 .main-content {
     flex: 1;
     display: flex;
@@ -114,6 +149,7 @@ body {
     width: 100%;
     position: relative;
 }
+
 .content-header {
     display: flex;
     align-items: center;
@@ -123,6 +159,7 @@ body {
     border-bottom: 1px solid var(--border-color);
     flex-shrink: 0;
 }
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -133,19 +170,22 @@ body {
     padding: 0;
     margin-right: 1.5rem;
 }
+
 .search-bar {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--input-bg);
     border-radius: var(--border-radius);
     flex-grow: 1;
     max-width: 40rem;
 }
+
 .search-bar.disabled {
     opacity: 0.3;
     pointer-events: none;
     visibility: hidden;
 }
+
 .search-input {
     flex: 1;
     padding: 0.8rem 1.2rem;
@@ -155,6 +195,7 @@ body {
     outline: none;
     font-size: 1.4rem;
 }
+
 .search-button {
     background: none;
     border: none;
@@ -162,11 +203,41 @@ body {
     padding: 0.8rem 1.2rem;
     cursor: pointer;
 }
+
 .action-buttons {
     margin-left: auto;
     display: flex;
     align-items: center;
+    gap: 1.5rem;
 }
+
+.theme-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.theme-btn:hover {
+    color: var(--accent-color);
+}
+
+.icon-moon {
+    display: none;
+}
+
+html.light-theme .icon-sun {
+    display: none;
+}
+
+html.light-theme .icon-moon {
+    display: inline-block;
+}
+
 .profile-btn {
     font-size: 2.2rem;
     text-decoration: none;
@@ -181,14 +252,68 @@ body {
     border-radius: 50%;
     transition: background 0.2s;
 }
+
 .profile-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--hover-bg-nav);
 }
+
 .content-area {
     flex: 1;
     padding: 2rem;
     overflow-y: auto;
 }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    text-decoration: none;
+    height: 4rem;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #a0e600;
+    transform: translateY(-2px);
+}
+
+html.light-theme .btn-primary {
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    border-color: var(--text-color);
+    background-color: var(--hover-bg-nav);
+}
+
+.btn-danger {
+    background-color: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+}
+
+.btn-danger:hover {
+    background-color: #ff4d4d;
+    color: #ffffff;
+}
+
 .tag {
     background-color: var(--active-bg-nav);
     color: var(--accent-color);
@@ -197,15 +322,18 @@ body {
     font-size: 1.2rem;
     margin-right: 0.5rem;
 }
+
 .empty-state {
     text-align: center;
     margin-top: 4rem;
     color: var(--text-gray);
 }
+
 .empty-icon {
     font-size: 5rem;
     margin-bottom: 1rem;
 }
+
 .overlay {
     position: fixed;
     top: 0;
@@ -219,17 +347,21 @@ body {
     transition: 0.3s;
     backdrop-filter: blur(2px);
 }
+
 .overlay.active {
     opacity: 1;
     visibility: visible;
 }
+
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: block;
     }
+
     .close-menu-btn {
         display: block;
     }
+
     .sidebar {
         position: fixed;
         top: 0;
@@ -237,15 +369,18 @@ body {
         height: 100%;
         width: 260px;
         transform: translateX(-100%);
-        box-shadow: 5px 0 15px rgba(0,0,0,0.5);
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
     }
+
     .sidebar.active {
         transform: translateX(0);
     }
+
     .search-bar {
         max-width: 100%;
         margin-right: 1rem;
     }
+
     .content-area {
         padding: 1.5rem;
     }
