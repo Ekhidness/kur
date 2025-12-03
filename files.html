@@ -9,46 +9,46 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <div id="overlay" class="overlay"></div>
-    <div class="app-container">
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header"><h1 class="app-title">Файлы</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
-                    <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
-                    <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
-                    <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
-                    <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
-                    <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
-                    <li><a href="files.html" class="nav-item active"><span class="icon">📂</span> Файлы</a></li>
-                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <header class="content-header">
-                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-                <div class="search-bar"><input type="text" placeholder="Поиск файлов..." class="search-input"><button class="search-button">🔍</button></div>
-                <div class="action-buttons"><button id="theme-toggle" class="theme-btn" aria-label="Сменить тему"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button><a href="profile.html" class="profile-btn">👤</a></div>
-            </header>
-            <div class="content-area">
-                <div class="storage-widget">
-                    <div class="storage-info"><h3>Облачное хранилище</h3><span class="storage-text">Использовано <b>7.5 GB</b> из 10 GB</span></div>
-                    <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
-                    <button class="btn btn-primary upload-btn">☁ Загрузить файл</button>
-                </div>
-                <div class="files-filters"><button class="filter-pill active">Все</button><button class="filter-pill">Документы</button></div>
-                <div class="files-grid">
-                    <div class="file-card">
-                        <div class="file-preview doc"><span class="file-icon">📄</span></div>
-                        <div class="file-details"><h4 class="file-name">ТЗ_Проект.pdf</h4><div class="file-meta"><span>2.4 MB</span> • <span>12 мая</span></div></div>
-                        <button class="file-menu">⋮</button>
-                    </div>
-                </div>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Файлы</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><i class="icon">📊</i> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item"><i class="icon">💡</i> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><i class="icon">🔔</i> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item"><i class="icon">⏱️</i> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><i class="icon">📅</i> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item"><i class="icon">🏷️</i> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item active"><i class="icon">📂</i> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><i class="icon">📦</i> Архив</a></li>
+                <li><a href="trash.html" class="nav-item"><i class="icon">🗑️</i> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar"><input type="text" placeholder="Поиск файлов..." class="search-input"><button class="search-btn">🔍</button></div>
+            <div class="header-actions"><button id="theme-toggle" class="theme-btn"><i class="icon-sun">☀</i><i class="icon-moon">☾</i></button><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area">
+            <section class="card storage-widget">
+                <div class="storage-head"><h3>Облачное хранилище</h3><p class="storage-text">7.5 GB / 10 GB</p></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                <button class="btn btn-primary upload-btn">☁ Загрузить файл</button>
+            </section>
+            <div class="files-filters"><button class="btn btn-secondary">Все</button><button class="btn btn-secondary">Документы</button><button class="btn btn-secondary">Изображения</button></div>
+            <div class="files-grid">
+                <article class="card file-card">
+                    <div class="file-preview doc"><i class="file-icon">📄</i></div>
+                    <div class="file-details"><h4 class="file-name">ТЗ_Проект.pdf</h4><small class="file-meta">2.4 MB</small></div>
+                    <button class="icon-btn">⋮</button>
+                </article>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>

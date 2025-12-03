@@ -9,50 +9,47 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <div id="overlay" class="overlay"></div>
-    <div class="app-container">
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header"><h1 class="app-title">Профиль</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
-                    <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
-                    <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
-                    <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
-                    <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
-                    <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
-                    <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
-                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <header class="content-header">
-                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-                <div class="search-bar disabled" style="opacity: 0; pointer-events: none;"></div>
-                <div class="action-buttons"><button id="theme-toggle" class="theme-btn" aria-label="Сменить тему"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button><a href="profile.html" class="profile-btn">👤</a></div>
-            </header>
-            <div class="content-area">
-                <div class="profile-wrapper">
-                    <div class="profile-card left-col">
-                        <div class="avatar-container"><img src="assets/images/avatar.jpg" alt="Avatar" class="avatar-img"></div>
-                        <h2 class="username">SuperUser</h2>
-                        <p class="email">user@example.com</p>
-                        <div class="user-stats"><div class="stat"><b>42</b><span>Заметки</span></div><div class="stat"><b>15</b><span>Файлы</span></div></div>
-                    </div>
-                    <div class="profile-card right-col">
-                        <h3>Настройки профиля</h3>
-                        <form class="profile-form">
-                            <div class="form-group"><label>Имя пользователя</label><input type="text" class="form-input" value="SuperUser"></div>
-                            <div class="form-group"><label>Email</label><input type="email" class="form-input" value="user@example.com"></div>
-                            <div class="form-group"><label>Новый пароль</label><input type="password" class="form-input" placeholder="••••••••"></div>
-                            <div class="form-actions"><button type="button" class="btn btn-primary">Сохранить</button><a href="login.html" class="btn btn-danger">Выйти</a></div>
-                        </form>
-                    </div>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Профиль</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><i class="icon">📊</i> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item"><i class="icon">💡</i> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><i class="icon">🔔</i> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item"><i class="icon">⏱️</i> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><i class="icon">📅</i> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item"><i class="icon">🏷️</i> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item"><i class="icon">📂</i> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><i class="icon">📦</i> Архив</a></li>
+                <li><a href="trash.html" class="nav-item"><i class="icon">🗑️</i> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar disabled"><input type="text" class="search-input"></div>
+            <div class="header-actions"><button id="theme-toggle" class="theme-btn"><i class="icon-sun">☀</i><i class="icon-moon">☾</i></button><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area">
+            <div class="profile-grid">
+                <div class="card profile-info">
+                    <div class="avatar"><img src="assets/images/avatar.jpg" alt="Avatar"></div>
+                    <h2>SuperUser</h2>
+                    <p class="email">user@example.com</p>
+                </div>
+                <div class="card profile-settings">
+                    <h3>Настройки</h3>
+                    <div class="form-group"><label>Имя</label><input type="text" value="SuperUser"></div>
+                    <div class="form-group"><label>Email</label><input type="email" value="user@example.com"></div>
+                    <div class="form-group"><label>Новый пароль</label><input type="password" placeholder="••••••••"></div>
+                    <div class="form-actions"><button class="btn btn-primary">Сохранить</button><a href="login.html" class="btn btn-danger">Выйти</a></div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>

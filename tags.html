@@ -9,41 +9,44 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <div id="overlay" class="overlay"></div>
-    <div class="app-container">
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header"><h1 class="app-title">Ярлыки</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
-                    <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
-                    <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
-                    <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
-                    <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
-                    <li><a href="tags.html" class="nav-item active"><span class="icon">🏷️</span> Ярлыки</a></li>
-                    <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
-                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <header class="content-header">
-                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-                <div class="search-bar"><input type="text" placeholder="Поиск ярлыка..." class="search-input"><button class="search-button">🔍</button></div>
-                <div class="action-buttons"><button id="theme-toggle" class="theme-btn" aria-label="Сменить тему"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button><a href="profile.html" class="profile-btn">👤</a></div>
-            </header>
-            <div class="content-area">
-                <div class="tags-header"><h2>Управление ярлыками</h2><button class="btn btn-primary">+ Новый ярлык</button></div>
-                <div class="tags-grid">
-                    <div class="tag-card">
-                        <div class="tag-top"><div class="tag-color" style="background-color: #ff4d4d; box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);"></div><button class="tag-options">•••</button></div>
-                        <h3 class="tag-name">Важное</h3><div class="tag-stats"><span>12 заметок</span><span>3 задачи</span></div>
-                    </div>
-                    <div class="tag-card add-new"><span class="plus-icon">+</span><span class="add-text">Создать</span></div>
-                </div>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Ярлыки</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><i class="icon">📊</i> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item"><i class="icon">💡</i> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><i class="icon">🔔</i> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item"><i class="icon">⏱️</i> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><i class="icon">📅</i> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item active"><i class="icon">🏷️</i> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item"><i class="icon">📂</i> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><i class="icon">📦</i> Архив</a></li>
+                <li><a href="trash.html" class="nav-item"><i class="icon">🗑️</i> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar"><input type="text" placeholder="Поиск ярлыка..." class="search-input"><button class="search-btn">🔍</button></div>
+            <div class="header-actions"><button id="theme-toggle" class="theme-btn"><i class="icon-sun">☀</i><i class="icon-moon">☾</i></button><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area">
+            <div class="page-header"><h2 class="page-title">Управление ярлыками</h2><button class="btn btn-primary">+ Новый ярлык</button></div>
+            <div class="tags-grid">
+                <article class="card tag-card">
+                    <div class="tag-top"><div class="tag-color" style="background-color: #ff4d4d;"></div><button class="icon-btn">⋮</button></div>
+                    <h3 class="tag-name">Важное</h3>
+                    <div class="tag-stats"><small>12 заметок</small></div>
+                </article>
+                <article class="card tag-card add-new">
+                    <span class="plus-icon">+</span><span class="add-text">Создать</span>
+                </article>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>

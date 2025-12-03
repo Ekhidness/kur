@@ -9,38 +9,38 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <div id="overlay" class="overlay"></div>
-    <div class="app-container">
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header"><h1 class="app-title">Таймер</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
-                    <li><a href="notes.html" class="nav-item"><span class="icon">💡</span> Заметки</a></li>
-                    <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
-                    <li><a href="timer.html" class="nav-item active"><span class="icon">⏱️</span> Таймер</a></li>
-                    <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
-                    <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
-                    <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
-                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <header class="content-header">
-                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-                <div class="search-bar disabled" style="opacity:0"><input type="text" placeholder="Таймер" disabled class="search-input"></div>
-                <div class="action-buttons"><button id="theme-toggle" class="theme-btn" aria-label="Сменить тему"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button><a href="profile.html" class="profile-btn">👤</a></div>
-            </header>
-            <div class="content-area">
-                <div class="timer-wrapper">
-                    <div class="timer-circle"><span id="timer-display">25:00</span></div>
-                    <div class="timer-controls"><button class="btn btn-primary control-btn">Старт</button><button class="btn btn-secondary control-btn">Сброс</button></div>
-                    <div class="timer-modes"><button class="mode-btn active">Помидор</button><button class="mode-btn">Перерыв</button></div>
-                </div>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Таймер</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><i class="icon">📊</i> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item"><i class="icon">💡</i> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><i class="icon">🔔</i> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item active"><i class="icon">⏱️</i> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><i class="icon">📅</i> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item"><i class="icon">🏷️</i> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item"><i class="icon">📂</i> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><i class="icon">📦</i> Архив</a></li>
+                <li><a href="trash.html" class="nav-item"><i class="icon">🗑️</i> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar disabled"><input type="text" placeholder="Таймер" disabled class="search-input"></div>
+            <div class="header-actions"><button id="theme-toggle" class="theme-btn"><i class="icon-sun">☀</i><i class="icon-moon">☾</i></button><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area centered">
+            <div class="timer-wrapper">
+                <div class="timer-circle"><time id="timer">25:00</time></div>
+                <div class="timer-controls"><button class="btn btn-primary large">Старт</button><button class="btn btn-secondary large">Сброс</button></div>
+                <div class="timer-modes"><button class="mode-btn active">Помидор</button><button class="mode-btn">Перерыв</button></div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>

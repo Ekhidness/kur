@@ -9,42 +9,42 @@
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <div id="overlay" class="overlay"></div>
-    <div class="app-container">
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header"><h1 class="app-title">Заметки</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
-            <nav class="sidebar-nav">
-                <ul>
-                    <li><a href="dashboard.html" class="nav-item"><span class="icon">📊</span> Дэшборд</a></li>
-                    <li><a href="notes.html" class="nav-item active"><span class="icon">💡</span> Заметки</a></li>
-                    <li><a href="reminders.html" class="nav-item"><span class="icon">🔔</span> Напоминания</a></li>
-                    <li><a href="timer.html" class="nav-item"><span class="icon">⏱️</span> Таймер</a></li>
-                    <li><a href="calendar.html" class="nav-item"><span class="icon">📅</span> Календарь</a></li>
-                    <li><a href="tags.html" class="nav-item"><span class="icon">🏷️</span> Ярлыки</a></li>
-                    <li><a href="files.html" class="nav-item"><span class="icon">📂</span> Файлы</a></li>
-                    <li><a href="archive.html" class="nav-item"><span class="icon">📦</span> Архив</a></li>
-                    <li><a href="trash.html" class="nav-item"><span class="icon">🗑️</span> Корзина</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main-content">
-            <header class="content-header">
-                <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
-                <div class="search-bar"><input type="text" placeholder="Поиск по заметкам..." class="search-input"><button class="search-button">🔍</button></div>
-                <div class="action-buttons"><button id="theme-toggle" class="theme-btn" aria-label="Сменить тему"><span class="icon-sun">☀</span><span class="icon-moon">☾</span></button><a href="profile.html" class="profile-btn">👤</a></div>
-            </header>
-            <div class="content-area">
-                <div class="notes-header"><h2>Все заметки</h2><button class="btn btn-primary">+ Новая заметка</button></div>
-                <div class="notes-grid">
-                    <div class="note-card create-new"><div class="plus-icon">+</div><h3>Создать заметку</h3></div>
-                    <div class="note-card">
-                        <div class="card-top"><h3>Идеи для стартапа</h3><button class="more-btn">•••</button></div>
-                        <p class="note-preview">1. Агрегатор скидок...<br>Нужно проанализировать рынок...</p>
-                        <div class="card-footer"><span class="date">Сегодня, 14:30</span><span class="tag" style="color: #b3ff00; background: rgba(179, 255, 0, 0.1);">Идеи</span></div>
-                    </div>
-                </div>
+<div id="overlay" class="overlay"></div>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header"><h1 class="app-title">Capsulify</h1><button id="close-menu-btn" class="close-menu-btn">✕</button></div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html" class="nav-item"><i class="icon">📊</i> Дэшборд</a></li>
+                <li><a href="notes.html" class="nav-item active"><i class="icon">💡</i> Заметки</a></li>
+                <li><a href="reminders.html" class="nav-item"><i class="icon">🔔</i> Напоминания</a></li>
+                <li><a href="timer.html" class="nav-item"><i class="icon">⏱️</i> Таймер</a></li>
+                <li><a href="calendar.html" class="nav-item"><i class="icon">📅</i> Календарь</a></li>
+                <li><a href="tags.html" class="nav-item"><i class="icon">🏷️</i> Ярлыки</a></li>
+                <li><a href="files.html" class="nav-item"><i class="icon">📂</i> Файлы</a></li>
+                <li><a href="archive.html" class="nav-item"><i class="icon">📦</i> Архив</a></li>
+                <li><a href="trash.html" class="nav-item"><i class="icon">🗑️</i> Корзина</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <header class="content-header">
+            <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+            <div class="search-bar"><input type="text" placeholder="Поиск по заметкам..." class="search-input"><button class="search-btn">🔍</button></div>
+            <div class="header-actions"><button id="theme-toggle" class="theme-btn"><i class="icon-sun">☀</i><i class="icon-moon">☾</i></button><a href="profile.html" class="profile-btn">👤</a></div>
+        </header>
+        <div class="content-area">
+            <div class="page-header"><h2 class="page-title">Все заметки</h2><button class="btn btn-primary">+ Создать</button></div>
+            <div class="notes-grid">
+                <article class="card note-card create-new"><i>+</i><h3>Новая заметка</h3></article>
+                <article class="card note-card">
+                    <div class="note-header"><h3>Идеи</h3><button class="icon-btn">⋮</button></div>
+                    <p class="note-body">Список идей для стартапа...</p>
+                    <div class="note-footer"><small>Сегодня</small><div class="badge">Личное</div></div>
+                </article>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 </body>
 </html>
